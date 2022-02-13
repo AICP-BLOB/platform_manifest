@@ -116,7 +116,6 @@
   <project path="hardware/qcom-caf/msm8994/media" name="AICP/hardware_qcom_media" groups="qcom,pdk-qcom" revision="s12.0-caf-8994" remote="aicp" />
 
 <!-- Exynos 9810 repos -->
-  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="arrow" />
   <project path="device/samsung/universal9810-common" name="blob-trees/android_device_samsung_universal9810-common" revision="aosp-12" remote="private_stuff" />
   <project path="device/samsung/starlte" name="android_device_samsung_starlte" remote="blob-aicp" />
   <project path="device/samsung/star2lte" name="android_device_samsung_star2lte" remote="blob-aicp" />
