@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!--SSH-->
+  <remote name="private_stuff" fetch="ssh://git@github.com/" />
+
+  <remote name="exynos9810"
+          fetch="https://github.com/9810-S"
+          revision="twelve" />
+
+  <remote name="blob"
+          fetch="https://github.com/blob-trees"
+          revision="aosp-12" />
+
+  <remote name="blob-twelve"
+          fetch="https://github.com/blob-trees"
+          revision="twelve" />
+
+  <remote name="blob-aicp"
+          fetch="https://github.com/blob-trees"
+          revision="aicp-12" />
+
+  <remote name="blob-rc"
+          fetch="https://github.com/blob-trees"
+          revision="AOSP-RC-2.2" />
+
+  <remote name="baddar"
+          fetch="https://github.com/baddar90"
+          revision="rc" />
+  
+  <remote name="exynos9810-device"
+          fetch="https://github.com/9810-S"
+          revision="aosp-12" />
+
+  <remote name="arrow"
+          fetch="https://github.com/ArrowOS"
+          revision="arrow-12.0" />
 
   <remote  name="aicp"
            fetch="https://git@github.com/"
@@ -80,6 +114,19 @@
   <project path="hardware/qcom-caf/msm8994/audio" name="AICP/hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="s12.0-caf-8994" remote="aicp" />
   <project path="hardware/qcom-caf/msm8994/display" name="AICP/hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="s12.0-caf-8994" remote="aicp" />
   <project path="hardware/qcom-caf/msm8994/media" name="AICP/hardware_qcom_media" groups="qcom,pdk-qcom" revision="s12.0-caf-8994" remote="aicp" />
+
+<!-- Exynos 9810 repos -->
+  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="arrow" />
+  <project path="device/samsung/universal9810-common" name="blob-trees/android_device_samsung_universal9810-common" revision="aosp-12" remote="private_stuff" />
+  <project path="device/samsung/starlte" name="android_device_samsung_starlte" remote="blob-aicp" />
+  <project path="device/samsung/star2lte" name="android_device_samsung_star2lte" remote="blob-aicp" />
+  <project path="device/samsung/crownlte" name="android_device_samsung_crownlte" remote="blob-aicp" />
+  <project path="hardware/samsung" name="android_hardware_samsung" remote="blob" />
+  <project path="kernel/samsung/universal9810" name="android_kernel_samsung_universal9810" remote="blob-rc" />
+  <project path="vendor/samsung/universal9810-common" name="blob-trees/android_vendor_samsung_universal9810-common" revision="aosp-12" remote="private_stuff" />
+  <project path="vendor/samsung/starlte" name="blob-trees/android_vendor_samsung_starlte" revision="aosp-12" remote="private_stuff" />
+  <project path="vendor/samsung/star2lte" name="android_vendor_samsung_star2lte" remote="blob" />
+  <project path="vendor/samsung/crownlte" name="blob-trees/android_vendor_samsung_crownlte" revision="aosp-12" remote="private_stuff" />
 
 <!-- Other additions -->
   <project path="external/hosts" name="StevenBlack/hosts" remote="github" revision="master" />
